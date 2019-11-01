@@ -8,9 +8,6 @@ class redbull:
     def __init__(self):
         print('program begins')
 
-    def open_browser(self):
-        self.driver= webdriver.Firefox()
-
     def create_account(self):
         driver= webdriver.Firefox()
         driver.get('http://www.fakemailgenerator.com/#/gustr.com')
@@ -56,9 +53,8 @@ class redbull:
 
 
 renn = redbull()
-# renn.open_browser()
-f_name = ['sheela', 'aastha']
-l_name = ['kumawat', 'shethi']
+f_name = [] #add first names here
+l_name = [] #add last names here
 for i,j in zip(f_name,l_name):
     renn.create_account()
     time.sleep(2)
